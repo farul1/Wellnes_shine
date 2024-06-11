@@ -28,10 +28,6 @@
             Sosial Media
         </div>
         <div class="sosmed d-flex gap-3">
-            <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a href=""><i class="fa-brands fa-square-facebook fa-2x"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
         </div>
     </div>
 </div>
