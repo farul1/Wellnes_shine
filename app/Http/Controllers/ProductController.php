@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use App\Models\product;
 use App\Http\Requests\StoreproductRequest;
 use App\Http\Requests\UpdateproductRequest;
-
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\View;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ProductController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
         $data = product::paginate(3);
@@ -20,6 +24,9 @@ class ProductController extends Controller
         ]);
     }
 
+    /**
+     * Show the form for creating a new resource.
+     */
     public function addModal()
     {
         return view('admin/modal/addModal', [
@@ -28,6 +35,9 @@ class ProductController extends Controller
         ]);
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(StoreproductRequest $request)
     {
         $data = new product;
@@ -51,6 +61,9 @@ class ProductController extends Controller
         return redirect()->route('product');
     }
 
+    /**
+     * Display the specified resource.
+     */
     public function show($id)
     {
         $data = product::findOrFail($id);
@@ -94,6 +107,9 @@ class ProductController extends Controller
         return redirect()->route('product');
     }
 
+    /**
+     * Remove the specified resource from storage.
+     */
     public function destroy($id)
     {
         $product = product::findOrFail($id);
@@ -105,5 +121,4 @@ class ProductController extends Controller
 
         echo json_encode($json);
     }
-
 }
