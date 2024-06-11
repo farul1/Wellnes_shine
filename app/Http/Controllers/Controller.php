@@ -42,4 +42,5 @@ class Controller extends BaseController
             'data'      => $db
         ]);
     }
+
 }
