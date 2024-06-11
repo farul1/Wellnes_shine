@@ -121,4 +121,5 @@ class ProductController extends Controller
 
         echo json_encode($json);
     }
+
 }

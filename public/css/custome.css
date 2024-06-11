@@ -1,0 +1,153 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(197, 197, 197); */
+}
+main {
+    background-color: rgba(224, 224, 224, 0.744);
+    min-height: 100vh;
+    overflow: hidden;
+}
+/* .icon-nav {
+    position: relative;
+    color: #FFFFFF8C;
+}
+.icon-nav:hover {
+    color: white;
+} */
+
+.text-links {
+    cursor: pointer;
+}
+
+.links-login {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #181E2C;
+    padding: 10px;
+    width: 200px;
+    z-index: 9999;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.activeLogin {
+    visibility: visible;
+    opacity: 1;
+}
+
+.links-login > a:hover {
+    color: #FFABAB;
+}
+
+.links-login > a {
+    color: #fff;
+}
+
+.circle {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    border-radius: 50%;
+    background-color: rgba(249, 32, 32, 0.86);
+    color: white;
+    font-size: 12px;
+    padding: 2px 9px;
+}
+.notif {
+    position: relative;
+    display: inline-block;
+}
+.fa-bag-shopping {
+    font-size: 24px;
+    color: rgba(249, 249, 249, 0.686);
+}
+.fa-bag-shopping:hover {
+    color: rgba(255, 255, 255, 0.867);
+}
+
+section {
+    min-height: 80vh;
+}
+
+footer {
+    position: static;
+    bottom: 0;
+    background-color: #181E2C;
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 97vh;
+}
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+.sidebar li {
+    list-style: none;
+    padding: 10px 5px;
+}
+.sidebar li:hover {
+    background-color: rgba(217, 217, 217, 0.518);
+    border-radius: 10px;
+    margin: 0;
+}
+.sidebar h5 {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.card-body {
+    background-color: #ffffff;
+    color: #000000;
+}
+.card-header {
+    background-color: #FFABAB;
+    color: #fff;
+}
+
+.card-header h2 {
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-body p {
+    margin-bottom: 1.25rem;
+}
+
+.col-form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #1a1d2e;
+    border-color: #1a1d2e;
+}
+
+.btn-primary:hover {
+    background-color: #1a1d2e8c;
+    border-color: #1a1d2e8c;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 162, 162, 0.5);
+}

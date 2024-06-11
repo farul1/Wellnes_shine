@@ -12,7 +12,9 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10)->create();
-
+        // Membuat 10 pengguna non-admin
+        User::factory(10)->create([
+            'is_admin' => 0,
+        ]);
     }
 }

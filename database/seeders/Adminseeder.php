@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -22,7 +21,6 @@ class AdminSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'password' => Hash::make('farulp123'),
             'is_admin' => 1,
-            'is_member' => 1,
             'alamat' => 'Jl. ketintang No. 3',
             'tlp' => '082257663431',
             'tglLahir' => '2004-05-09',
