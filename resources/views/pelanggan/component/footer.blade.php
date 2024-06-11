@@ -28,10 +28,10 @@
             Sosial Media
         </div>
         <div class="sosmed d-flex gap-3">
-            <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a href=""><i class="fa-brands fa-square-facebook fa-2x"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/syafaaa_frl/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/syafarul.priwantoro/"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+            <a href="https://wa.me/082257663431"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/farul-s-036039197/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
         </div>
     </div>
 </div>
