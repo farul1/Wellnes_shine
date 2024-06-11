@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 use Symfony\Component\HttpFoundation\Response;
 
 class adminMiddleware
@@ -15,6 +16,10 @@ class adminMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        return $next($request);
+        if(auth()->check() && auth()->user()->is_admin){
+            return $next($request);
+        }
+        Alert::toast('Kamu bukan admin', 'error');
+        return redirect('/admin');
     }
 }
