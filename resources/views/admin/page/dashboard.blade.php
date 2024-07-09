@@ -74,12 +74,7 @@
                     </tbody>
                 </table>
                 <div class="pagination d-flex flex-row justify-content-between">
-                    {{-- <div class="showData">
-                        Data ditampilkan {{ $data->count() }} dari {{ $data->total() }}
-                    </div>
-                    <div>
-                        {{ $data->links() }}
-                    </div> --}}
+                    
                 </div>
             </div>
         </div>
