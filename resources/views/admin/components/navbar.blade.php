@@ -2,7 +2,6 @@
     <div class="d-flex flex-column">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item active"><a href="#">{{ $name }}</a></li>
-            {{-- <li class="breadcrumb-item active" aria-current="page">Library</li> --}}
         </ol>
         <span>{{ $name }}</span>
     </div>
