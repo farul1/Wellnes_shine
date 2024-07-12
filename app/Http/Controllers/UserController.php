@@ -57,13 +57,13 @@ class UserController extends Controller
     public function show($id)
     {
         $data = User::findOrFail($id);
-        // $hasValue = Hash::make($data->password);
+
         return view(
             'admin.modal.editUser',
             [
                 'title' => 'Edit data User',
                 'data'  => $data,
-                // 'pass'  => (string) $hasValue,
+
             ]
         )->render();
     }
