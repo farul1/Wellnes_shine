@@ -116,7 +116,6 @@
                 var split = value.split(' ');
                 var kategory = split[0];
                 var type = split[1];
-                // alert(type);
                 $.ajax({
                     type: "GET",
                     url: "{{ route('shop') }}",
