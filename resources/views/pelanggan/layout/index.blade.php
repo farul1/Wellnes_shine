@@ -19,7 +19,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js"
         data-client-key="{{ config('midtrans.client_id') }}"></script>
-    <!-- Note: replace with src="https://app.midtrans.com/snap/snap.js" for Production environment -->
     <title>Toko Online | {{ $title }}</title>
 </head>
 
